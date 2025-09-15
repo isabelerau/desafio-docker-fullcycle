@@ -18,15 +18,18 @@ Rodei o comando abaixo para executar diretamente o `main.go`:
 
 ```bash
 go run main.go
+```
 
 ## ▶️ Compilando o código
 Rodei o comando abaixo para compilar o `main.go`:
 
 ```bash
 go build main.go
+```
 
-## ▶️ Executando
+## ▶️ Executando o binário
 Rodei o comando abaixo para executar o binário construído:
 
 ```bash
 ./main
+```
