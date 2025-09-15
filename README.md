@@ -46,6 +46,7 @@ Nessa segunda parte usarei o docker, portanto não é necessária a instalação
 - Aproveitei o main.go que já havia criado anteriormente.
 - Criei o arquivo `Dockerfile`, usando a imagem mais leve que encontrei, alpine.
 - Nesse exemplo, ao executar o container, a aplicação pode ser acessada no navegador em: [http://localhost:8080](http://localhost:8080)
+- O tamanho da imagem final foi 425MB.
 
 ## ▶️ Buildando e executando a imagem
 Na raiz do diretório 2-go, rodei os seguintes comandos:
@@ -53,4 +54,22 @@ Na raiz do diretório 2-go, rodei os seguintes comandos:
 ```bash
 docker build -t 2-go .
 docker run -p 8080:8080 2-go
+```
+
+# 🚀 3 — Go Multistage Building
+
+Nessa parte farei o processo de build em duas etapas.  
+
+## 👨‍💻 Estrutura
+- Aproveitei o main.go que já havia criado anteriormente.
+- Aproveitei o `Dockerfile` já criado e fiz algumas alterações, utilizando multistage para diminuir o tamanho final da imagem a ser criada.
+- Nesse exemplo, ao executar o container, a aplicação pode ser acessada no navegador em: [http://localhost:8080](http://localhost:8080)
+- O tamanho da imagem final foi 10.1MB.
+
+## ▶️ Buildando e executando a imagem
+Na raiz do diretório 3-go-multistage, rodei os seguintes comandos:
+
+```bash
+docker build -t 3-go-multistage .
+docker run -p 8080:8080 3-go-multistage
 ```
