@@ -1,6 +1,7 @@
 # desafio-docker-fullcycle
-> 📌 **Desafio 1 (Módulo Docker):** Criar uma imagem Docker em Go com no máximo **2MB** de tamanho.
-Aplicação Go que expõe um servidor web simples e imprime uma mensagem no console. O projeto usa Docker para compilar o binário da aplicação e empacotá-lo em uma imagem Docker otimizada com multi-stage build, resultando em um contêiner leve e eficiente. Ideal para demonstrações de Go e Docker.
+> 📌 **Desafio 1 (Módulo Docker):** Criar uma imagem Docker em Go com menos de **2MB** de tamanho.
+Aplicação Go que expõe um servidor web simples e imprime uma mensagem no console. O projeto usa Docker para compilar o binário da aplicação e empacotá-lo em uma imagem Docker otimizada com multi-stage build, resultando em um contêiner leve e eficiente - ideal para demonstrações de Go e Docker.
+Neste README, detalho o passo a passo que segui até alcançar o objetivo do desafio. Caso queira testar, a imagem está disponível no meu `DockerHub`: [https://hub.docker.com/repository/docker/isabelerau/desafio-1-docker-go-fullcycle/general](https://hub.docker.com/repository/docker/isabelerau/desafio-1-docker-go-fullcycle/general)  
 
 # 🚀 1 — Go Initial
 
@@ -74,7 +75,7 @@ docker run -p 8080:8080 3-go-multistage
 
 # 🚀 4 — Go Multistage Building Smaller
 
-Nessa parte, chegaremos ao objetivo do desafio: construir uma imagem com o tamanho menor ou igual a 2MB.
+Nessa parte, chegaremos ao objetivo do desafio: construir uma imagem com o tamanho menor que 2MB.
 
 ## 👨‍💻 Estrutura
 - Aproveitei o main.go que já havia criado anteriormente.
